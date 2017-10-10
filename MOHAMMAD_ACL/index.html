@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ACL Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style>
+#sha{ 
+-moz-box-shadow: 1px 1px 2px 1px #ffffff;
+-webkit-box-shadow: 1px 1px 2px 1px #ffffff;
+-o-box-shadow: 1px 1px 2px 1px #ffffff;
+box-shadow: 1px 1px 2px 1px #ffffff;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#ffffff, Direction=134, Strength=2);
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background:#000;
+color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Accueil</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://openclassrooms.com/courses/les-acl-access-control-lists-sous-linux">Cours</a>
+                    </li>
+                    <li>
+                        <a href="https://openclassrooms.com/forum/">Forums</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/acl_logo.jpg')" style="margin:auto;0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="#what">
+                        <h2 class="post-title">
+                            Les ACL, c'est quoi ?
+                        </h2>
+                        <h3 class="post-subtitle">
+                           Une ACL (Access Control List) ou "liste de contrôle d'accès" est...
+                        </h3>
+                    </a>
+                     <p class="post-meta">Posté par <a href="#">Anissa Mohammad</a> le 06 février 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#why">
+                        <h2 class="post-title">
+                            Pourquoi les ACL ?
+                        </h2>
+						 <h3 class="post-subtitle">
+                           Au moyen des ACL, on peut étendre le nombre d'utilisateurs...
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posté par <a href="#">Anissa Mohammad</a> le 07 février 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="#how">
+                        <h2 class="post-title">
+                           Comment l'installer sur Linux ?
+                        </h2>
+                     
+                    </a>
+                    <p class="post-meta">Posté par <a href="#">Anissa Mohammad</a> le 07 février 2017</p>
+                </div>
+               
+                <hr>
+				
+				<div class="post-preview">
+                    <a href="#method">
+                        <h2 class="post-title">
+                          Utilisation
+                        </h2>
+                     
+                    </a>
+                    <p class="post-meta">Posté par <a href="#">Anissa Mohammad</a> le 08 février 2017</p>
+                </div>
+               
+                <hr>
+				
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                       
+                    </li>
+                </ul>
+				
+				<!-------INTRO---------->
+				</br>
+                <div class="post-preview">
+                   
+                        <h2 class="post-title"  style="font-size:24px;" id="what">
+                            Les ACL, c'est quoi ?
+                        </h2>
+                        <hr style="border-color:black;">
+                        <p class="post-subtitle" style="font-weight:normal;font-size:18px;">
+                            Par défaut, la gestion des droits sous Linux est relativement basique (bien que souvent suffisante). En effet, il n'est possible de permettre ou d'interdire la lecture, l'écriture et l'exécution de fichiers que pour trois catégories d'utilisateurs : le propriétaire du fichier, le groupe auquel appartient le propriétaire et le reste du monde. Cette gestion des droits permet de configurer les accès aux fichiers dans la plupart des situations simples mais peut s'avérer limitée, par exemple, dans un contexte où plusieurs utilisateurs doivent accéder à une ressource partagée alors qu'ils n'ont pas de groupe commun.
+Les ACL permettent de pallier ce manque grâce à une gestion avancée des droits. Ainsi, il devient possible d'autoriser un utilisateur tiers à effectuer des opérations sur un fichier (dossier) sans autoriser tout un groupe ou tout le reste du monde.</p>
+       
+           <!-- <pre id="sha">ddddddddddd</pre>          -->
+                 
+                </div>
+                </br>
+				
+				<div class="post-preview">
+                
+                 <h2 class="post-title"  style="font-size:24px;" id="why">
+                            Pourquoi les ACL ?
+                        </h2>
+                        <hr style="border-color:black;">
+                        <p class="post-subtitle" style="font-weight:normal;font-size:18px;">
+                        Pourquoi les ACL ?
+Au moyen des ACL, on peut étendre le nombre d'utilisateurs et de groupes ayant des droits sur un même fichier. Rappelons que, dans le monde UNIX, chaque fichier ne peut normalement indiquer des permissions que pour un seul utilisateur et un seul groupe, qui s'opposent à une unique catégorie correspondant à « tous les autres » (ou « le reste du monde »). Avec les ACL, on peut (entre autres) ajouter à un fichier d'autres utilisateurs et groupes et définir leurs droits séparément. On se rapproche ainsi du système de permissions pratiqué sur les plate-formes NT (de nombreuses différences subsistent, cependant).
+Les ACL sont très utiles (voire indispensables) dans des environnements informatiques axés sur le travail collaboratif et mutualisé ; de même, leur utilisation avec SAMBA permet d'en étendre les capacités.</p>
+
+				
+                </div>
+				</br>
+				   
+                <div class="post-preview">
+                
+                 <h2 class="post-title"  style="font-size:24px;" id="how">
+                            Comment l'installer sur Linux ?
+                        </h2>
+                        <hr style="border-color:black;">
+                       
+                        <ul class="post-subtitle" style="font-weight:normal;font-size:18px;" type="square";>
+                        <li>Activation des ACL </li>
+                        <p style="font-weight:normal;font-size:18px;">Tout d'abord, sachez que les ACL ne peuvent être utilisées que si le noyau le supporte. 
+Le plus simple est de le vérifier dans le fichier de configuration du noyau, fichier normalement situé sous /boot. Pour ce faire, utiliser la commande grep : 	
+						</p>
+						<pre id="sha">grep ACL /boot/config-version-du-noyau</pre> 
+                        <p>Elle doit retourner CONFIG_FS_POSIX_ACL=y pour le type système de fichier qui nous intéresse.
+-	Installation du paquet ACL
+Les ACL sont activées, mais nous ne pouvons toujours pas les modifier, pour cela nous devons installer le paquet acl :
+						</p>
+                        <pre id="sha">apt-get update && apt-get install acl</pre> 
+                        </ul>
+                   </div>
+				   
+				   </br>
+				   
+				   <div class="post-preview">
+                
+                 <h2 class="post-title"  style="font-size:24px;" id="method">
+                            Utilisation
+                        </h2>
+                        <hr style="border-color:black;">
+                        <p class="post-subtitle" style="font-weight:normal;font-size:18px;">Il existe deux commandes essentielles : l'une pour attribuer les droits à un fichier (setfacl) et l'autre pour la lecture des droits (getfacl). </p>
+                        
+                        <ul class="post-subtitle" style="font-weight:normal;font-size:18px;" type="square";>
+                        <li>Setfacl : Modifier les ACL </li>
+                        </ul>
+                        <p style="font-weight:normal;font-size:18px;">Pour ajouter les ACL, on utilise la commande :</p>
+                        <pre id="sha">setfacl -m permissions fichierOuDossier</pre>
+						
+						   
+					   <p style="font-weight:normal;font-size:18px;">les permissions s'écrivent sous cette forme :</p>
+					   <pre id="sha">préfixe:[utilisateurOuGroupe:]droits</pre>
+					   <p style="font-size:18px;">Les préfixes disponibles sont :</p>
+					   <p style="font-size:18px;">- u : Pour modifier les droits d'un utilisateur: </br>- g: Pour modifier les droits d'un groupe 
+					   </br>- o : Pour modifier les droits du reste du monde (other)</p>
+					   
+					   <p style="font-weight:normal;font-size:18px;">Les droits s'écrivent sous la forme d'un triplet rwx que vous devez déjà connaitre :</p>
+					   <p style="font-weight:normal;font-size:18px;">r = droit de lecture </br>w = droit d’écriture </br>x = droit d'exécution pour les fichiers, pour les dossiers, 
+						c'est le droit "d'entrée" dans le dossier</p>
+						
+						<p style="font-weight:normal;font-size:18px;">Ainsi la commande :</p> 
+                          <pre id="sha">setfacl -m u:bernard:rw- test</pre>    
+
+						<p style="font-weight:normal;font-size:18px;">Donnera les droits de lecture et d'écriture à bernard pour le fichier test.</br>Et pour appliquer les droits
+						à tout un répertoire : on ajoute l’option -R</p>
+						<pre id="sha">setfacl -Rm u:bernard:rw RepertoireDeTest/</pre>    
+						</br>
+						
+						<ul class="post-subtitle" style="font-weight:normal;font-size:18px;" type="square";>
+                        <li>getfacl : voir les ACL en place </li>
+                        </ul>
+						
+						<p class="post-subtitle" style="font-weight:normal;font-size:18px;">La commande getfacl vous permet de connaitre les ACL en place.</br>
+						- Le masque : Le masque vous permet de savoir quelles sont les autorisations maximales accordées à un fichier ou dossier
+						(utilisateurs et groupes confondus), les droits classiques (chmod) ne sont pas comptabilisés.</p>
+						<pre id="sha">getfacl test
+						</br># file: test</br># owner: op414</br># group: op414</br>user::rwx</br>user:bernard:rwx</br>group::rwx</br>mask::rwx</br>other::--</pre> 
+						
+						<p class="post-subtitle" style="font-weight:normal;font-size:18px;">Ici, le masque est rwx car bernard possède les droits rwx.</br>L'utilité du masque est de pouvoir enlever des permissions à tous les utilisateurs et groupes (sauf de l'utilisateur propriétaire, dont les droits sont définis par chmod.</br>
+
+On utilise pour cela le préfixe m : suivi du droit de lecture sur le fichier test :</p>
+
+						<pre id="sha">setfacl -m m:r—test
+						</br>getfacl test</br># file: test</br># owner: op414</br># group: op414</br>user::rwx</br>user:bernard:rwx          #effective:r--</br>group::rwx                #effective:r--</br>mask::r--</pre>  
+						
+						<p class="post-subtitle" style="font-weight:normal;font-size:18px;">On remarque que les droits de bernard, patrick et du groupe propriétaire n'ont pas été modifiés (ce qui permet de les rétablir en ré-augentant le masque ). </br>En revanche, il est maintenant écrit " #effective:r-- " en face de leurs lignes. </br>Cela signifie que leurs droits réellements appliqués sont r-- .
+						
+                       </div>
+					
+                        
+					
+				
+					
+					
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Anissa Mohammad 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
